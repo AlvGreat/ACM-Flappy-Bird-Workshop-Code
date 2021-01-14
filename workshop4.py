@@ -1,3 +1,7 @@
+"""
+Workshop 4 Code
+"""
+
 import pygame
 import neat # documentation: https://neat-python.readthedocs.io/en/latest/config_file.html
 import time
