@@ -12,6 +12,7 @@ pygame.font.init() # we have to do this for fonts
 # size of the window. Note that all caps in python signals a constant
 WIN_WIDTH = 500
 WIN_HEIGHT = 800
+win = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
 
 # pygame.transform.scale2x() makes an image 2x larger
 # pygame.image.load() loads an image
@@ -225,7 +226,6 @@ def main():
     bird = Bird(230, 350) #where it starts
     base = Base(730) # the height is 800, so put the base at 730 since it's 70px tall
     pipes = [Pipe(600)]
-    win = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
     clock = pygame.time.Clock() # create a clock in order to keep track of how many ticks per second we do
     score = 0 # keep track of the user score (+1 every passed pipe)
 
